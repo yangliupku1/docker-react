@@ -3,7 +3,7 @@ services:
   - docker
 
 before_install:
-  - docker build -t yangliupku/docker-react - f Dockerfile.dev .
+  - docker build -t yangliupku/docker-react -f Dockerfile.dev .
 
 script:
   - docker run yangliupku/docker-react npm run test -- --coverage
